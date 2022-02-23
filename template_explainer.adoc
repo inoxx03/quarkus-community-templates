@@ -1,0 +1,73 @@
+include::attributes.adoc[]
+//this attribute is necessary for single-sourcing and must be placed before the title.
+:_content-type: CONCEPT
+
+//section IDs must match the title
+//can it be auto-generated in this format?
+[id="sectiom-title"]
+//For example, "Introduction to REST" or "What is REST"
+//Use sentence case in all titles and subtitles.
+= Section Title
+
+//Introduction
+////
+The content of an explainer gives the user descriptions and explanations needed to understand a concept.
+Write a short introductory paragraph that provides an overview of the concept that you are explaining.
+////
+
+//Paragraphs
+////
+In an explainer, write longer paragraphs if necessary.
+Focus on the concept at hand.
+Provide sufficient context, but avoid including unrelated information.
+Use links to point to related information, if it is documented somewhere else.
+////
+
+
+//Attribute substitutions
+////
+Substitute:
+* Quarkus with {platform-name}
+* Current release version with {platform-version}. For example 2.7.1.Final
+*
+////
+
+//links
+////
+link:www.example.com[Link caption]
+////
+
+
+//Images
+////
+.Use labels to caption images
+image::{IMG_DIR}/example.png["Description of the image contents for accessibility"]
+////
+
+//code blocks
+[source,java,options="subs,attributes+"]
+----
+
+----
+
+//OPTIONAL
+[id="second-level-heading"]
+== Second-level heading
+
+
+//OPTIONAL
+=== Third-level heading
+
+
+.Next steps
+////
+A bulleted list of links to content that describes the actions that developers can take which are related to the the concept that this section explains.
+* link:example.com[Link text]
+////
+
+.Additional resources
+////
+Optional. Delete this if not used.
+* A bulleted list of links to other closely-related material, such as reference sections.
+
+////
