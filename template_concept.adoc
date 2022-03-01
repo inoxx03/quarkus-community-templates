@@ -1,5 +1,6 @@
 include::attributes.adoc[]
 
+//Concept template
 //section IDs must match the title for
 //Can it be auto-generated in this format?
 //Use sentence case in all titles and subtitles.
@@ -9,12 +10,12 @@ include::attributes.adoc[]
 
 //Introduction
 ////
-The content of an explainer gives the user descriptions and explanations needed to understand a concept.
+The content of an concept gives the user descriptions and explanations needed to understand a concept.
 Write a short introductory paragraph that provides an overview of the concept that you are explaining.
 ////
 
 
-//General Guidance for explainers
+//General Guidance for concepts
 ////
 // Taken from diataxis.fr
 * Make connections
