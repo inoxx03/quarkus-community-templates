@@ -4,7 +4,7 @@ include::attributes.adoc[]
 //section IDs must match the title for
 //Can it be auto-generated in this format?
 //Use sentence case in all titles and subtitles.
-[id="sectiom-title"]
+[id="section-title"]
 //For example, "Introduction to REST"
 = Section Title
 
@@ -86,7 +86,7 @@ When the code example refers to a specific file within a project, label the code
 
 
 //Optional ID for third-level headings
-[id="second-level-heading"]
+[id="third-level-heading"]
 === Third-level heading
 
 
