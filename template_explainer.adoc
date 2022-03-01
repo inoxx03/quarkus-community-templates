@@ -1,12 +1,10 @@
 include::attributes.adoc[]
-//this attribute is necessary for single-sourcing and must be placed before the title.
-:_content-type: CONCEPT
 
-//section IDs must match the title
-//can it be auto-generated in this format?
-[id="sectiom-title"]
-//For example, "Introduction to REST" or "What is REST"
+//section IDs must match the title for
+//Can it be auto-generated in this format?
 //Use sentence case in all titles and subtitles.
+[id="sectiom-title"]
+//For example, "Introduction to REST"
 = Section Title
 
 //Introduction
@@ -15,59 +13,93 @@ The content of an explainer gives the user descriptions and explanations needed 
 Write a short introductory paragraph that provides an overview of the concept that you are explaining.
 ////
 
+
+//General Guidance for explainers
+////
+// Taken from diataxis.fr
+* Make connections
+When writing explanation you are helping to weave a web of understanding for your readers. Make connections to other things, even to things outside the immediate topic, if that helps.
+
+* Provide context
+Provide background and context in your explanation: explain why things are so - design decisions, historical reasons, technical constraints - draw implications, mention specific examples.
+
+* Talk about the subject
+Explanation guides are about a topic in the sense that they are around it. Even the names of your explanation guides should reflect this; you should be able to place an implicit (or even explicit) about in front of each title. For example: About user authentication, or About database connection policies.
+
+* Discuss alternatives and opinions
+Explanation can consider alternatives, counter-examples or multiple different approaches to the same question. You’re not giving instruction or describing facts - you’re opening up the topic for consideration. It helps to think of explanation as discussion: discussions can even consider and weigh up contrary opinions.
+
+* Do not instruct, or provide technical reference
+One risk of explanation is that other things can tend to creep in. Explanation should do things that the other parts of the documentation do not. It’s not the place of an explanation to instruct the user in how to do something. Nor should it provide technical description. These functions of documentation are already taken care of in other sections.
+////
+
 //Paragraphs
 ////
-In an explainer, write longer paragraphs if necessary.
-Focus on the concept at hand.
-Provide sufficient context, but avoid including unrelated information.
-Use links to point to related information, if it is documented somewhere else.
+1. Write longer paragraphs if necessary.
+2. Focus on the concept at hand.
+3. Provide sufficient context, but avoid including unrelated or tangential information. Use links to point to related information, if it is documented somewhere else.
+4. Avoid using poetic language.
 ////
 
 
 //Attribute substitutions
 ////
 Substitute:
-* Quarkus with {platform-name}
-* Current release version with {platform-version}. For example 2.7.1.Final
-*
+* Quarkus with {quarkus-name}
+* Release versions with {quarkus-version}. For example, 2.7.1.Final
 ////
 
 //links
+//Use full link macros. Do not use "naked" links.
 ////
 link:www.example.com[Link caption]
 ////
 
+//Cross-references
+////
+Use ID-based references rather than path-based ones
+xref:section-id[Link caption]
+////
 
 //Images
 ////
-.Use labels to caption images
-image::{IMG_DIR}/example.png["Description of the image contents for accessibility"]
+//Use labels to caption images
+.Image label
+image::{IMG_DIR}/example.png["Description of the image for accessibility"]
+//Provide an alternative text describing the content of an image.
 ////
 
-//code blocks
+//Code Blocks
+////
+When the code example refers to a specific file within a project, label the code block with the filename.
+.Code block label
 [source,java,options="subs,attributes+"]
 ----
-
 ----
+////
 
-//OPTIONAL
+//Optional ID for second-level headings
 [id="second-level-heading"]
 == Second-level heading
 
 
-//OPTIONAL
+
+//Optional ID for third-level headings
+[id="second-level-heading"]
 === Third-level heading
 
 
+//Omit this if not used.
 .Next steps
 ////
 A bulleted list of links to content that describes the actions that developers can take which are related to the the concept that this section explains.
-* link:example.com[Link text]
+* link:example.com[Title or brief description of the content that you are linking to]
 ////
 
+//Omit this if not used.
 .Additional resources
 ////
 Optional. Delete this if not used.
 * A bulleted list of links to other closely-related material, such as reference sections.
-
+* link:example.com[Title or brief description of the content that you are linking to]
 ////
